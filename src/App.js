@@ -29,10 +29,10 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.books)
+    //console.log(this.state.books)
     return (
       <div className="book-container">
-        <BookList books={this.state.books} shelfBook={this.shelfBook} shelvedBooks={this.state.shelvedBooks}/>
+        <BookList books={this.state.books} shelvedBooks={this.state.shelvedBooks} shelfBook={this.shelfBook}/>
         <Bookshelf books={this.state.books} shelfBook={this.shelfBook} shelvedBooks={this.state.shelvedBooks}/>
       </div>
     );
